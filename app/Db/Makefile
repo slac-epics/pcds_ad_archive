@@ -21,7 +21,7 @@ include $(TOP)/configure/CONFIG
 # Create and install (or just install)
 # Archive files, templates, substitutions like this
 # ARCHIVE += archive_ipimb.archive
-ARCHIVE += archive_pcds_ad.archive
+ARCHIVE += pcds_ad.archive pcds_ad_stream.archive
 
 include $(TOP)/configure/RULES
 #----------------------------------------
