@@ -16,12 +16,21 @@ include $(TOP)/configure/CONFIG
 # Create and install (or just install)
 # Autosave request files, templates, substitutions like this
 # REQ += autosave_ipimb.req
+#REQ += pcds_ad.tpl-req
+#REQ += pcds_ad_stream.tpl-req
+#REQ += pcds_ad_plugin_roi.tpl-req
+#REQ += pcds_ad_plugin_stats.tpl-req
 
 #----------------------------------------------------
 # Create and install (or just install)
 # Archive files, templates, substitutions like this
 # ARCHIVE += archive_ipimb.archive
-ARCHIVE += pcds_ad.archive pcds_ad_stream.archive
+ARCHIVE += pcds_ad.tpl-arch
+ARCHIVE += pcds_ad_stream.tpl-arch
+ARCHIVE += pcds_ad_plugin_roi.tpl-arch
+ARCHIVE += pcds_ad_plugin_stats.tpl-arch
+ARCHIVE += pcds_ad_plugin_overlay.tpl-arch
+ARCHIVE += pcds_ad_basler.tpl-arch
 
 include $(TOP)/configure/RULES
 #----------------------------------------

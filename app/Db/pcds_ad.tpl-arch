@@ -1,0 +1,54 @@
+#
+# Generic archive template for area detector iocs (GigECam, Vimba, ...)
+#
+# Syntax:   <pv_name>           <period> [ monitor ]
+# Example:  TST:R00:IOC:00:STATUS   0.1    monitor
+#
+# pcds_ad.tpl-arch
+
+
+# Status
+$(CAM):MaxSizeX_RBV             10 monitor
+$(CAM):MaxSizeX_RBV             10 monitor
+$(CAM):ArraySizeX_RBV           10 monitor
+$(CAM):ArraySizeY_RBV           10 monitor
+$(CAM):ArraySize_RBV            10 monitor
+$(CAM):DataType_RBV             10 monitor
+$(CAM):BitsPerPixel_RBV         10 monitor
+$(CAM):ColorMode_RBV            10 monitor
+
+# Acquisition settings
+$(CAM):AcquireTime              10 monitor
+$(CAM):AcquireTime_RBV          10 monitor
+$(CAM):Gain                     10 monitor
+$(CAM):Gain_RBV                 10 monitor
+$(CAM):NumImages                10 monitor
+$(CAM):NumImages_RBV            10 monitor
+$(CAM):ImageMode_RBV             10 monitor
+$(CAM):TriggerMode_RBV          10 monitor
+$(CAM):AcquirePeriod            10 monitor
+$(CAM):AcquirePeriod_RBV        10 monitor
+
+$(CAM):BinX_RBV                 10 monitor
+$(CAM):BinY_RBV                 10 monitor
+$(CAM):MinX_RBV                 10 monitor
+$(CAM):MinY_RBV                 10 monitor
+$(CAM):SizeX_RBV                10 monitor
+$(CAM):SizeY_RBV                10 monitor
+
+# Image collection
+$(CAM):Acquire                  10 monitor
+$(CAM):ArrayRate_RBV            1 monitor
+
+# Crosshairs (camviewer uses those)
+$(CAM):Cross1X                  10 monitor
+$(CAM):Cross1Y                  10 monitor
+$(CAM):Cross2X                  10 monitor
+$(CAM):Cross2Y                  10 monitor
+
+# EVR
+$(CAM):CamRepRate_RBV               10 monitor
+$(CAM):TSS:CamEventCode_RBV         10 monitor
+$(CAM):TSS:SyncStatus               10 monitor
+$(CAM):TSS:TsPolicy                 10 monitor
+

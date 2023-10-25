@@ -1,0 +1,169 @@
+# pcds_ad_plugin_overlay.tpl-arch
+# Macros:
+#   CAM: Camera PV base. Ex: XPP:GIGE:01
+#   STATS: Stats plugin name. EX: Stats1
+
+
+$(CAM):$(OVER):PortName_RBV             10 monitor
+$(CAM):$(OVER):NDArrayPort_RBV          10 monitor
+
+
+# Callbacks
+$(CAM):$(OVER):EnableCallbacks          10 monitor
+$(CAM):$(OVER):MinCallbackTime_RBV      10 monitor
+$(CAM):$(OVER):NumThreads_RBV           10 monitor
+$(CAM):$(OVER):BlockingCallbacks        10 monitor
+
+# Counters
+$(CAM):$(OVER):ArrayCounter_RBV         10 monitor
+$(CAM):$(OVER):ArrayRate_RBV            10 monitor
+$(CAM):$(OVER):QueueSize                10 monitor
+$(CAM):$(OVER):QueueUse                 10 monitor
+$(CAM):$(OVER):DroppedArrays_RBV        10 monitor
+
+# Overlays
+$(CAM):$(OVER):1:Name                   10 monitor
+$(CAM):$(OVER):1:Use                    10 monitor
+$(CAM):$(OVER):1:Shape                  10 monitor
+$(CAM):$(OVER):1:DrawMode               10 monitor
+$(CAM):$(OVER):1:Red_RBV                10 monitor
+$(CAM):$(OVER):1:Green_RBV              10 monitor
+$(CAM):$(OVER):1:Blue_RBV               10 monitor
+$(CAM):$(OVER):1:WidthX_RBV             10 monitor
+$(CAM):$(OVER):1:WidthY_RBV             10 monitor
+$(CAM):$(OVER):1:PositionX_RBV          10 monitor
+$(CAM):$(OVER):1:PositionXLink.DOL      10 monitor
+$(CAM):$(OVER):1:SizeX_RBV              10 monitor
+$(CAM):$(OVER):1:SizeXLink.DOL          10 monitor
+$(CAM):$(OVER):1:PositionY_RBV          10 monitor
+$(CAM):$(OVER):1:PositionYLink.DOL      10 monitor
+$(CAM):$(OVER):1:SizeY_RBV              10 monitor
+$(CAM):$(OVER):1:SizeYLink.DOL          10 monitor
+
+$(CAM):$(OVER):2:Name                   10 monitor
+$(CAM):$(OVER):2:Use                    10 monitor
+$(CAM):$(OVER):2:Shape                  10 monitor
+$(CAM):$(OVER):2:DrawMode               10 monitor
+$(CAM):$(OVER):2:Red_RBV                10 monitor
+$(CAM):$(OVER):2:Green_RBV              10 monitor
+$(CAM):$(OVER):2:Blue_RBV               10 monitor
+$(CAM):$(OVER):2:WidthX_RBV             10 monitor
+$(CAM):$(OVER):2:WidthY_RBV             10 monitor
+$(CAM):$(OVER):2:PositionX_RBV          10 monitor
+$(CAM):$(OVER):2:PositionXLink.DOL      10 monitor
+$(CAM):$(OVER):2:SizeX_RBV              10 monitor
+$(CAM):$(OVER):2:SizeXLink.DOL          10 monitor
+$(CAM):$(OVER):2:PositionY_RBV          10 monitor
+$(CAM):$(OVER):2:PositionYLink.DOL      10 monitor
+$(CAM):$(OVER):2:SizeY_RBV              10 monitor
+$(CAM):$(OVER):2:SizeYLink.DOL          10 monitor
+
+$(CAM):$(OVER):3:Name                   10 monitor
+$(CAM):$(OVER):3:Use                    10 monitor
+$(CAM):$(OVER):3:Shape                  10 monitor
+$(CAM):$(OVER):3:DrawMode               10 monitor
+$(CAM):$(OVER):3:Red_RBV                10 monitor
+$(CAM):$(OVER):3:Green_RBV              10 monitor
+$(CAM):$(OVER):3:Blue_RBV               10 monitor
+$(CAM):$(OVER):3:WidthX_RBV             10 monitor
+$(CAM):$(OVER):3:WidthY_RBV             10 monitor
+$(CAM):$(OVER):3:PositionX_RBV          10 monitor
+$(CAM):$(OVER):3:PositionXLink.DOL      10 monitor
+$(CAM):$(OVER):3:SizeX_RBV              10 monitor
+$(CAM):$(OVER):3:SizeXLink.DOL          10 monitor
+$(CAM):$(OVER):3:PositionY_RBV          10 monitor
+$(CAM):$(OVER):3:PositionYLink.DOL      10 monitor
+$(CAM):$(OVER):3:SizeY_RBV              10 monitor
+$(CAM):$(OVER):3:SizeYLink.DOL          10 monitor
+
+$(CAM):$(OVER):4:Name                   10 monitor
+$(CAM):$(OVER):4:Use                    10 monitor
+$(CAM):$(OVER):4:Shape                  10 monitor
+$(CAM):$(OVER):4:DrawMode               10 monitor
+$(CAM):$(OVER):4:Red_RBV                10 monitor
+$(CAM):$(OVER):4:Green_RBV              10 monitor
+$(CAM):$(OVER):4:Blue_RBV               10 monitor
+$(CAM):$(OVER):4:WidthX_RBV             10 monitor
+$(CAM):$(OVER):4:WidthY_RBV             10 monitor
+$(CAM):$(OVER):4:PositionX_RBV          10 monitor
+$(CAM):$(OVER):4:PositionXLink.DOL      10 monitor
+$(CAM):$(OVER):4:SizeX_RBV              10 monitor
+$(CAM):$(OVER):4:SizeXLink.DOL          10 monitor
+$(CAM):$(OVER):4:PositionY_RBV          10 monitor
+$(CAM):$(OVER):4:PositionYLink.DOL      10 monitor
+$(CAM):$(OVER):4:SizeY_RBV              10 monitor
+$(CAM):$(OVER):4:SizeYLink.DOL          10 monitor
+
+$(CAM):$(OVER):5:Name                   10 monitor
+$(CAM):$(OVER):5:Use                    10 monitor
+$(CAM):$(OVER):5:Shape                  10 monitor
+$(CAM):$(OVER):5:DrawMode               10 monitor
+$(CAM):$(OVER):5:Red_RBV                10 monitor
+$(CAM):$(OVER):5:Green_RBV              10 monitor
+$(CAM):$(OVER):5:Blue_RBV               10 monitor
+$(CAM):$(OVER):5:WidthX_RBV             10 monitor
+$(CAM):$(OVER):5:WidthY_RBV             10 monitor
+$(CAM):$(OVER):5:PositionX_RBV          10 monitor
+$(CAM):$(OVER):5:PositionXLink.DOL      10 monitor
+$(CAM):$(OVER):5:SizeX_RBV              10 monitor
+$(CAM):$(OVER):5:SizeXLink.DOL          10 monitor
+$(CAM):$(OVER):5:PositionY_RBV          10 monitor
+$(CAM):$(OVER):5:PositionYLink.DOL      10 monitor
+$(CAM):$(OVER):5:SizeY_RBV              10 monitor
+$(CAM):$(OVER):5:SizeYLink.DOL          10 monitor
+
+$(CAM):$(OVER):6:Name                   10 monitor
+$(CAM):$(OVER):6:Use                    10 monitor
+$(CAM):$(OVER):6:Shape                  10 monitor
+$(CAM):$(OVER):6:DrawMode               10 monitor
+$(CAM):$(OVER):6:Red_RBV                10 monitor
+$(CAM):$(OVER):6:Green_RBV              10 monitor
+$(CAM):$(OVER):6:Blue_RBV               10 monitor
+$(CAM):$(OVER):6:WidthX_RBV             10 monitor
+$(CAM):$(OVER):6:WidthY_RBV             10 monitor
+$(CAM):$(OVER):6:PositionX_RBV          10 monitor
+$(CAM):$(OVER):6:PositionXLink.DOL      10 monitor
+$(CAM):$(OVER):6:SizeX_RBV              10 monitor
+$(CAM):$(OVER):6:SizeXLink.DOL          10 monitor
+$(CAM):$(OVER):6:PositionY_RBV          10 monitor
+$(CAM):$(OVER):6:PositionYLink.DOL      10 monitor
+$(CAM):$(OVER):6:SizeY_RBV              10 monitor
+$(CAM):$(OVER):6:SizeYLink.DOL          10 monitor
+
+$(CAM):$(OVER):7:Name                   10 monitor
+$(CAM):$(OVER):7:Use                    10 monitor
+$(CAM):$(OVER):7:Shape                  10 monitor
+$(CAM):$(OVER):7:DrawMode               10 monitor
+$(CAM):$(OVER):7:Red_RBV                10 monitor
+$(CAM):$(OVER):7:Green_RBV              10 monitor
+$(CAM):$(OVER):7:Blue_RBV               10 monitor
+$(CAM):$(OVER):7:WidthX_RBV             10 monitor
+$(CAM):$(OVER):7:WidthY_RBV             10 monitor
+$(CAM):$(OVER):7:PositionX_RBV          10 monitor
+$(CAM):$(OVER):7:PositionXLink.DOL      10 monitor
+$(CAM):$(OVER):7:SizeX_RBV              10 monitor
+$(CAM):$(OVER):7:SizeXLink.DOL          10 monitor
+$(CAM):$(OVER):7:PositionY_RBV          10 monitor
+$(CAM):$(OVER):7:PositionYLink.DOL      10 monitor
+$(CAM):$(OVER):7:SizeY_RBV              10 monitor
+$(CAM):$(OVER):7:SizeYLink.DOL          10 monitor
+
+$(CAM):$(OVER):8:Name                   10 monitor
+$(CAM):$(OVER):8:Use                    10 monitor
+$(CAM):$(OVER):8:Shape                  10 monitor
+$(CAM):$(OVER):8:DrawMode               10 monitor
+$(CAM):$(OVER):8:Red_RBV                10 monitor
+$(CAM):$(OVER):8:Green_RBV              10 monitor
+$(CAM):$(OVER):8:Blue_RBV               10 monitor
+$(CAM):$(OVER):8:WidthX_RBV             10 monitor
+$(CAM):$(OVER):8:WidthY_RBV             10 monitor
+$(CAM):$(OVER):8:PositionX_RBV          10 monitor
+$(CAM):$(OVER):8:PositionXLink.DOL      10 monitor
+$(CAM):$(OVER):8:SizeX_RBV              10 monitor
+$(CAM):$(OVER):8:SizeXLink.DOL          10 monitor
+$(CAM):$(OVER):8:PositionY_RBV          10 monitor
+$(CAM):$(OVER):8:PositionYLink.DOL      10 monitor
+$(CAM):$(OVER):8:SizeY_RBV              10 monitor
+$(CAM):$(OVER):8:SizeYLink.DOL          10 monitor
+
+

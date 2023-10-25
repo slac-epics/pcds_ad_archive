@@ -10,6 +10,6 @@
 ifeq ($(wildcard $(EPICS_BASE)/include),)
 $(error Invalid EPICS_BASE: $(EPICS_BASE))
 endif
-ifeq ($(wildcard $(ASYN)/include),)
-$(error Invalid ASYN: $(ASYN))
-endif
+#ifeq ($(wildcard $(ASYN)/include),)
+#$(error Invalid ASYN: $(ASYN))
+#endif

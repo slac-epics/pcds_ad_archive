@@ -1,0 +1,218 @@
+# pcds_ad_stream.tpl-arch
+# Macros: 
+#   CAM: Camera PV base. Ex: XPP:GIGE:01
+#   STREAM: Stream name. EX: IMAGE1
+
+# Name and input
+$(CAM):$(STREAM):StreamPort             10 monitor
+$(CAM):$(STREAM):StreamInput            10 monitor
+$(CAM):$(STREAM):PortName_RBV           10 monitor
+$(CAM):$(STREAM):NDArrayPort_RBV        10 monitor
+
+# Callback
+$(CAM):$(STREAM):EnableCallbacks_RBV    10 monitor
+$(CAM):$(STREAM):MinCallbackTime        10 monitor
+
+# Counter
+$(CAM):$(STREAM):ArrayRate_RBV          10 monitor
+
+# Array Dims
+$(CAM):$(STREAM):NDimensions_RBV        10 monitor
+$(CAM):$(STREAM):ArraySize0_RBV         10 monitor
+$(CAM):$(STREAM):ArraySize1_RBV         10 monitor
+$(CAM):$(STREAM):ArraySize2_RBV         10 monitor
+$(CAM):$(STREAM):ArraySize3_RBV         10 monitor
+$(CAM):$(STREAM):ArraySize4_RBV         10 monitor
+$(CAM):$(STREAM):ArraySize5_RBV         10 monitor
+$(CAM):$(STREAM):ArraySize6_RBV         10 monitor
+$(CAM):$(STREAM):ArraySize7_RBV         10 monitor
+$(CAM):$(STREAM):ArraySize8_RBV         10 monitor
+$(CAM):$(STREAM):ArraySize9_RBV         10 monitor
+
+# ROI
+$(CAM):$(STREAM):ROI:ArrayRate_RBV              10 monitor
+$(CAM):$(STREAM):ROI:PortName_RBV               10 monitor
+$(CAM):$(STREAM):ROI:NDArrayPort_RBV            10 monitor
+
+$(CAM):$(STREAM):ROI:EnableCallbacks_RBV        10 monitor
+$(CAM):$(STREAM):ROI:MinCallbackTime_RBV        10 monitor
+$(CAM):$(STREAM):ROI:NumThreads_RBV             10 monitor
+$(CAM):$(STREAM):ROI:BlockingCallbacks          10 monitor
+
+$(CAM):$(STREAM):ROI:EnableX                    10 monitor
+$(CAM):$(STREAM):ROI:EnableY                    10 monitor
+$(CAM):$(STREAM):ROI:EnableZ                    10 monitor
+$(CAM):$(STREAM):ROI:MaxSizeX_RBV               10 monitor
+$(CAM):$(STREAM):ROI:MaxSizeY_RBV               10 monitor
+$(CAM):$(STREAM):ROI:MaxSizeZ_RBV               10 monitor
+$(CAM):$(STREAM):ROI:BinX_RBV                   10 monitor
+$(CAM):$(STREAM):ROI:BinY_RBV                   10 monitor
+$(CAM):$(STREAM):ROI:BinZ_RBV                   10 monitor
+$(CAM):$(STREAM):ROI:MinX_RBV                   10 monitor
+$(CAM):$(STREAM):ROI:MinY_RBV                   10 monitor
+$(CAM):$(STREAM):ROI:MinZ_RBV                   10 monitor
+$(CAM):$(STREAM):ROI:SizeX_RBV                  10 monitor
+$(CAM):$(STREAM):ROI:SizeY_RBV                  10 monitor
+$(CAM):$(STREAM):ROI:SizeZ_RBV                  10 monitor
+$(CAM):$(STREAM):ROI:ReverseX                   10 monitor
+$(CAM):$(STREAM):ROI:ReverseY                   10 monitor
+$(CAM):$(STREAM):ROI:ReverseZ                   10 monitor
+
+
+# Overlay
+$(CAM):$(STREAM):Over:ArrayRate_RBV          10 monitor
+$(CAM):$(STREAM):Over:PortName_RBV           10 monitor
+$(CAM):$(STREAM):Over:NDArrayPort_RBV        10 monitor
+
+$(CAM):$(STREAM):Over:EnableCallbacks        10 monitor
+$(CAM):$(STREAM):Over:MinCallbackTime_RBV    10 monitor
+$(CAM):$(STREAM):Over:NumThreads_RBV         10 monitor
+$(CAM):$(STREAM):Over:BlockingCallbacks      10 monitor
+
+$(CAM):$(STREAM):Box1:Name                      10 monitor
+$(CAM):$(STREAM):Box1:Use                       10 monitor
+$(CAM):$(STREAM):Box1:Shape                     10 monitor
+$(CAM):$(STREAM):Box1:DrawMode                  10 monitor
+$(CAM):$(STREAM):Box1:Red_RBV                   10 monitor
+$(CAM):$(STREAM):Box1:Green_RBV                 10 monitor
+$(CAM):$(STREAM):Box1:Blue_RBV                  10 monitor
+$(CAM):$(STREAM):Box1:WidthX_RBV                10 monitor
+$(CAM):$(STREAM):Box1:WidthY_RBV                10 monitor
+$(CAM):$(STREAM):Box1:PositionX_RBV             10 monitor
+$(CAM):$(STREAM):Box1:PositionXLink.DOL         10 monitor
+$(CAM):$(STREAM):Box1:SizeX_RBV                 10 monitor
+$(CAM):$(STREAM):Box1:SizeXLink.DOL             10 monitor
+$(CAM):$(STREAM):Box1:PositionY_RBV             10 monitor
+$(CAM):$(STREAM):Box1:PositionYLink.DOL         10 monitor
+$(CAM):$(STREAM):Box1:SizeY_RBV                 10 monitor
+$(CAM):$(STREAM):Box1:SizeYLink.DOL             10 monitor
+
+$(CAM):$(STREAM):Box2:Name                      10 monitor
+$(CAM):$(STREAM):Box2:Use                       10 monitor
+$(CAM):$(STREAM):Box2:Shape                     10 monitor
+$(CAM):$(STREAM):Box2:DrawMode                  10 monitor
+$(CAM):$(STREAM):Box2:Red_RBV                   10 monitor
+$(CAM):$(STREAM):Box2:Green_RBV                 10 monitor
+$(CAM):$(STREAM):Box2:Blue_RBV                  10 monitor
+$(CAM):$(STREAM):Box2:WidthX_RBV                10 monitor
+$(CAM):$(STREAM):Box2:WidthY_RBV                10 monitor
+$(CAM):$(STREAM):Box2:PositionX_RBV             10 monitor
+$(CAM):$(STREAM):Box2:PositionXLink.DOL         10 monitor
+$(CAM):$(STREAM):Box2:SizeX_RBV                 10 monitor
+$(CAM):$(STREAM):Box2:SizeXLink.DOL             10 monitor
+$(CAM):$(STREAM):Box2:PositionY_RBV             10 monitor
+$(CAM):$(STREAM):Box2:PositionYLink.DOL         10 monitor
+$(CAM):$(STREAM):Box2:SizeY_RBV                 10 monitor
+$(CAM):$(STREAM):Box2:SizeYLink.DOL             10 monitor
+
+$(CAM):$(STREAM):Box3:Name                      10 monitor
+$(CAM):$(STREAM):Box3:Use                       10 monitor
+$(CAM):$(STREAM):Box3:Shape                     10 monitor
+$(CAM):$(STREAM):Box3:DrawMode                  10 monitor
+$(CAM):$(STREAM):Box3:Red_RBV                   10 monitor
+$(CAM):$(STREAM):Box3:Green_RBV                 10 monitor
+$(CAM):$(STREAM):Box3:Blue_RBV                  10 monitor
+$(CAM):$(STREAM):Box3:WidthX_RBV                10 monitor
+$(CAM):$(STREAM):Box3:WidthY_RBV                10 monitor
+$(CAM):$(STREAM):Box3:PositionX_RBV             10 monitor
+$(CAM):$(STREAM):Box3:PositionXLink.DOL         10 monitor
+$(CAM):$(STREAM):Box3:SizeX_RBV                 10 monitor
+$(CAM):$(STREAM):Box3:SizeXLink.DOL             10 monitor
+$(CAM):$(STREAM):Box3:PositionY_RBV             10 monitor
+$(CAM):$(STREAM):Box3:PositionYLink.DOL         10 monitor
+$(CAM):$(STREAM):Box3:SizeY_RBV                 10 monitor
+$(CAM):$(STREAM):Box3:SizeYLink.DOL             10 monitor
+
+$(CAM):$(STREAM):Box4:Name                      10 monitor
+$(CAM):$(STREAM):Box4:Use                       10 monitor
+$(CAM):$(STREAM):Box4:Shape                     10 monitor
+$(CAM):$(STREAM):Box4:DrawMode                  10 monitor
+$(CAM):$(STREAM):Box4:Red_RBV                   10 monitor
+$(CAM):$(STREAM):Box4:Green_RBV                 10 monitor
+$(CAM):$(STREAM):Box4:Blue_RBV                  10 monitor
+$(CAM):$(STREAM):Box4:WidthX_RBV                10 monitor
+$(CAM):$(STREAM):Box4:WidthY_RBV                10 monitor
+$(CAM):$(STREAM):Box4:PositionX_RBV             10 monitor
+$(CAM):$(STREAM):Box4:PositionXLink.DOL         10 monitor
+$(CAM):$(STREAM):Box4:SizeX_RBV                 10 monitor
+$(CAM):$(STREAM):Box4:SizeXLink.DOL             10 monitor
+$(CAM):$(STREAM):Box4:PositionY_RBV             10 monitor
+$(CAM):$(STREAM):Box4:PositionYLink.DOL         10 monitor
+$(CAM):$(STREAM):Box4:SizeY_RBV                 10 monitor
+$(CAM):$(STREAM):Box4:SizeYLink.DOL             10 monitor
+
+$(CAM):$(STREAM):Cross1:Name                    10 monitor
+$(CAM):$(STREAM):Cross1:Use                     10 monitor
+$(CAM):$(STREAM):Cross1:Shape                   10 monitor
+$(CAM):$(STREAM):Cross1:DrawMode                10 monitor
+$(CAM):$(STREAM):Cross1:Red_RBV                 10 monitor
+$(CAM):$(STREAM):Cross1:Green_RBV               10 monitor
+$(CAM):$(STREAM):Cross1:Blue_RBV                10 monitor
+$(CAM):$(STREAM):Cross1:WidthX_RBV              10 monitor
+$(CAM):$(STREAM):Cross1:WidthY_RBV              10 monitor
+$(CAM):$(STREAM):Cross1:PositionX_RBV           10 monitor
+$(CAM):$(STREAM):Cross1:PositionXLink.DOL       10 monitor
+$(CAM):$(STREAM):Cross1:SizeX_RBV               10 monitor
+$(CAM):$(STREAM):Cross1:SizeXLink.DOL           10 monitor
+$(CAM):$(STREAM):Cross1:PositionY_RBV           10 monitor
+$(CAM):$(STREAM):Cross1:PositionYLink.DOL       10 monitor
+$(CAM):$(STREAM):Cross1:SizeY_RBV               10 monitor
+$(CAM):$(STREAM):Cross1:SizeYLink.DOL           10 monitor
+
+$(CAM):$(STREAM):Cross2:Name                    10 monitor
+$(CAM):$(STREAM):Cross2:Use                     10 monitor
+$(CAM):$(STREAM):Cross2:Shape                   10 monitor
+$(CAM):$(STREAM):Cross2:DrawMode                10 monitor
+$(CAM):$(STREAM):Cross2:Red_RBV                 10 monitor
+$(CAM):$(STREAM):Cross2:Green_RBV               10 monitor
+$(CAM):$(STREAM):Cross2:Blue_RBV                10 monitor
+$(CAM):$(STREAM):Cross2:WidthX_RBV              10 monitor
+$(CAM):$(STREAM):Cross2:WidthY_RBV              10 monitor
+$(CAM):$(STREAM):Cross2:PositionX_RBV           10 monitor
+$(CAM):$(STREAM):Cross2:PositionXLink.DOL       10 monitor
+$(CAM):$(STREAM):Cross2:SizeX_RBV               10 monitor
+$(CAM):$(STREAM):Cross2:SizeXLink.DOL           10 monitor
+$(CAM):$(STREAM):Cross2:PositionY_RBV           10 monitor
+$(CAM):$(STREAM):Cross2:PositionYLink.DOL       10 monitor
+$(CAM):$(STREAM):Cross2:SizeY_RBV               10 monitor
+$(CAM):$(STREAM):Cross2:SizeYLink.DOL           10 monitor
+
+$(CAM):$(STREAM):Cross3:Name                    10 monitor
+$(CAM):$(STREAM):Cross3:Use                     10 monitor
+$(CAM):$(STREAM):Cross3:Shape                   10 monitor
+$(CAM):$(STREAM):Cross3:DrawMode                10 monitor
+$(CAM):$(STREAM):Cross3:Red_RBV                 10 monitor
+$(CAM):$(STREAM):Cross3:Green_RBV               10 monitor
+$(CAM):$(STREAM):Cross3:Blue_RBV                10 monitor
+$(CAM):$(STREAM):Cross3:WidthX_RBV              10 monitor
+$(CAM):$(STREAM):Cross3:WidthY_RBV              10 monitor
+$(CAM):$(STREAM):Cross3:PositionX_RBV           10 monitor
+$(CAM):$(STREAM):Cross3:PositionXLink.DOL       10 monitor
+$(CAM):$(STREAM):Cross3:SizeX_RBV               10 monitor
+$(CAM):$(STREAM):Cross3:SizeXLink.DOL           10 monitor
+$(CAM):$(STREAM):Cross3:PositionY_RBV           10 monitor
+$(CAM):$(STREAM):Cross3:PositionYLink.DOL       10 monitor
+$(CAM):$(STREAM):Cross3:SizeY_RBV               10 monitor
+$(CAM):$(STREAM):Cross3:SizeYLink.DOL           10 monitor
+
+$(CAM):$(STREAM):Cross4:Name                    10 monitor
+$(CAM):$(STREAM):Cross4:Use                     10 monitor
+$(CAM):$(STREAM):Cross4:Shape                   10 monitor
+$(CAM):$(STREAM):Cross4:DrawMode                10 monitor
+$(CAM):$(STREAM):Cross4:Red_RBV                 10 monitor
+$(CAM):$(STREAM):Cross4:Green_RBV               10 monitor
+$(CAM):$(STREAM):Cross4:Blue_RBV                10 monitor
+$(CAM):$(STREAM):Cross4:WidthX_RBV              10 monitor
+$(CAM):$(STREAM):Cross4:WidthY_RBV              10 monitor
+$(CAM):$(STREAM):Cross4:PositionX_RBV           10 monitor
+$(CAM):$(STREAM):Cross4:PositionXLink.DOL       10 monitor
+$(CAM):$(STREAM):Cross4:SizeX_RBV               10 monitor
+$(CAM):$(STREAM):Cross4:SizeXLink.DOL           10 monitor
+$(CAM):$(STREAM):Cross4:PositionY_RBV           10 monitor
+$(CAM):$(STREAM):Cross4:PositionYLink.DOL       10 monitor
+$(CAM):$(STREAM):Cross4:SizeY_RBV               10 monitor
+$(CAM):$(STREAM):Cross4:SizeYLink.DOL           10 monitor
+
+
+
+

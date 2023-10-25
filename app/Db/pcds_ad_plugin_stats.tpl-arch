@@ -1,0 +1,52 @@
+# pcds_ad_plugin_stats.tpl-arch
+# Macros:
+#   CAM: Camera PV base. Ex: XPP:GIGE:01
+#   STATS: Stats plugin name. EX: Stats1
+
+
+$(CAM):$(STATS):PortName_RBV            10 monitor
+$(CAM):$(STATS):NDArrayPort_RBV         10 monitor
+
+# Callback
+$(CAM):$(STATS):EnableCallbacks         10 monitor
+$(CAM):$(STATS):MinCallbackTime_RBV     10 monitor
+$(CAM):$(STATS):NumThreads_RBV          10 monitor
+$(CAM):$(STATS):BlockingCallbacks       10 monitor
+
+# Statistics
+$(CAM):$(STATS):ComputeStatistics       10 monitor
+$(CAM):$(STATS):BgdWidth_RBV            10 monitor
+$(CAM):$(STATS):MinValue_RBV            10 monitor
+$(CAM):$(STATS):MaxValue_RBV            10 monitor
+$(CAM):$(STATS):MinX_RBV                1 monitor
+$(CAM):$(STATS):MaxX_RBV                1 monitor
+$(CAM):$(STATS):MinY_RBV                1 monitor
+$(CAM):$(STATS):MaxY_RBV                1 monitor
+$(CAM):$(STATS):MeanValue_RBV           1 monitor
+$(CAM):$(STATS):Sigma_RBV               1 monitor
+$(CAM):$(STATS):Total_RBV               1 monitor
+$(CAM):$(STATS):Net_RBV                 1 monitor
+
+# Centroid
+$(CAM):$(STATS):ComputeCentroid         10 monitor
+$(CAM):$(STATS):CentroidThreshold_RBV   10 monitor
+$(CAM):$(STATS):CentroidX_RBV           1 monitor
+$(CAM):$(STATS):CentroidY_RBV           1 monitor
+$(CAM):$(STATS):SigmaX_RBV              1 monitor
+$(CAM):$(STATS):SigmaY_RBV              1 monitor
+$(CAM):$(STATS):SigmaXY_RBV             1 monitor
+
+# Histogram
+$(CAM):$(STATS):ComputeHistogram        10 monitor
+$(CAM):$(STATS):HistSize_RBV            10 monitor
+$(CAM):$(STATS):HistMin_RBV             10 monitor
+$(CAM):$(STATS):HistMax_RBV             10 monitor
+
+# Profiles
+$(CAM):$(STATS):ComputeProfiles         10 monitor
+$(CAM):$(STATS):CursorX_RBV             10 monitor
+$(CAM):$(STATS):CursorY_RBV             10 monitor
+$(CAM):$(STATS):ProfileSizeX_RBV        10 monitor
+$(CAM):$(STATS):ProfileSizeY_RBV        10 monitor
+
+

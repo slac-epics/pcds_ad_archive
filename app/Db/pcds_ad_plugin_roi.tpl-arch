@@ -1,0 +1,40 @@
+# pcds_ad_plugin_roi.tpl-arch
+# Macros:
+#   CAM: Camera PV base. Ex: XPP:GIGE:01
+#   ROI: ROI name. EX: ROI1
+
+
+$(CAM):$(ROI):PortName_RBV          10 monitor
+$(CAM):$(ROI):NDArrayPort_RBV       10 monitor
+
+# Callback
+$(CAM):$(ROI):EnableCallbacks_RBV   10 monitor
+$(CAM):$(ROI):MinCallbackTime_RBV   10 monitor
+$(CAM):$(ROI):NumThreads_RBV        10 monitor
+$(CAM):$(ROI):BlockingCallbacks     10 monitor
+
+# Scaling
+$(CAM):$(ROI):EnableScale           10 monitor
+$(CAM):$(ROI):Scale_RBV             10 monitor
+
+# ROI settings
+$(CAM):$(ROI):EnableX               10 monitor
+$(CAM):$(ROI):EnableY               10 monitor
+$(CAM):$(ROI):EnableZ               10 monitor
+$(CAM):$(ROI):MaxSizeX_RBV          10 monitor
+$(CAM):$(ROI):MaxSizeY_RBV          10 monitor
+$(CAM):$(ROI):MaxSizeZ_RBV          10 monitor
+$(CAM):$(ROI):BinX_RBV              10 monitor
+$(CAM):$(ROI):BinY_RBV              10 monitor
+$(CAM):$(ROI):BinZ_RBV              10 monitor
+$(CAM):$(ROI):MinX_RBV              10 monitor
+$(CAM):$(ROI):MinY_RBV              10 monitor
+$(CAM):$(ROI):MinZ_RBV              10 monitor
+$(CAM):$(ROI):SizeX_RBV             10 monitor
+$(CAM):$(ROI):SizeY_RBV             10 monitor
+$(CAM):$(ROI):SizeZ_RBV             10 monitor
+$(CAM):$(ROI):ReverseX              10 monitor
+$(CAM):$(ROI):ReverseY              10 monitor
+$(CAM):$(ROI):ReverseZ              10 monitor
+
+

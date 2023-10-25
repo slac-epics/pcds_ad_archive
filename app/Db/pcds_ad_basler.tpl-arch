@@ -1,0 +1,16 @@
+#
+# Archived PVs for Basler cameras
+#
+# Syntax:   <pv_name>           <period> [ monitor ]
+# Example:  TST:R00:IOC:00:STATUS   0.1    monitor
+#
+# pcds_ad_basler.tpl-arch
+
+$(CAM):GevSCPSPacketSiz_RBV     1 monitor
+$(CAM):GevSCDCT                 1 monitor
+$(CAM):GevSCDCT_RBV             1 monitor
+$(CAM):COMPLETED_RBV            1 monitor
+$(CAM):FAILURES_RBV             1 monitor
+$(CAM):MISSING_PKTS_RBV         1 monitor
+$(CAM):RESENT_PKTS_RBV          1 monitor
+$(CAM):UNDERRUNS_RBV            1 monitor
