@@ -45,6 +45,10 @@ $(CAM):Cross1X                  10 monitor
 $(CAM):Cross1Y                  10 monitor
 $(CAM):Cross2X                  10 monitor
 $(CAM):Cross2Y                  10 monitor
+$(CAM):Cross3X                  10 monitor
+$(CAM):Cross3Y                  10 monitor
+$(CAM):Cross4X                  10 monitor
+$(CAM):Cross4Y                  10 monitor
 
 # EVR
 $(CAM):CamRepRate_RBV               10 monitor
